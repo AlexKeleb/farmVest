@@ -1,19 +1,41 @@
 //====================================================================================================
 
 .main-block {
+  &__container-big {
+    position: relative;
+  }
   &__container {
   }
 
   &__content {
+    @include adaptiveValue("padding-top", 250, 130);
+    @include adaptiveValue("padding-bottom", 200, 30);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   &__title {
+    max-width: rem(750);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 69, 30);
+    }
   }
 
   &__text {
+    max-width: rem(570);
+    line-height: 180%;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 48, 20);
+    }
   }
 
   &__form {
+    @media (max-width: em(430)) {
+      width: 100%;
+    }
   }
 
   &__icons {
@@ -32,25 +54,41 @@
 }
 .icons-main-block {
   &__item {
+    position: absolute;
+    pointer-events: none;
     &_1 {
+      top: percent(675, 974);
+      left: rem(15);
     }
 
     &_2 {
+      top: percent(380, 974);
+      left: percent(237, 1620);
     }
 
     &_3 {
+      top: percent(757, 974);
+      left: percent(403, 1620);
     }
 
     &_4 {
+      top: percent(134, 974);
+      left: percent(1149, 1620);
     }
 
     &_5 {
+      top: percent(419, 974);
+      left: percent(1325, 1620);
     }
 
     &_6 {
+      top: percent(776, 974);
+      left: percent(1321, 1620);
     }
 
     &_7 {
+      top: percent(367, 974);
+      right: rem(15);
     }
   }
 }

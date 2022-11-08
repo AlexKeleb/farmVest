@@ -30,6 +30,24 @@
     img {
       max-width: 100%;
     }
+    &::before,
+    &::after {
+      content: "";
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      @include adaptiveValue("width", 585, 300);
+      @include adaptiveValue("height", 585, 300);
+    }
+    &::before {
+      transform: translate(calc(-50% - rem(28)), -50%);
+    }
+    &::after {
+      transform: translate(calc(-50% + rem(27)), calc(-50% - rem(55)));
+    }
   }
   // .header__menu
   &__menu {
