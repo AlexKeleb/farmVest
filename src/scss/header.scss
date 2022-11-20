@@ -11,7 +11,7 @@
   &._header-scroll {
     padding-top: rem(20);
     padding-bottom: rem(20);
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba($color: #000000, $alpha: 0.6);
   }
   // .header__container-big
   &__container-big {
@@ -29,24 +29,6 @@
     @include adaptiveValue("width", 143, 120, 1620, 768, 1);
     img {
       max-width: 100%;
-    }
-    &::before,
-    &::after {
-      content: "";
-      pointer-events: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      border-radius: 50%;
-      border: 1px solid #fff;
-      @include adaptiveValue("width", 585, 300);
-      @include adaptiveValue("height", 585, 300);
-    }
-    &::before {
-      transform: translate(calc(-50% - rem(28)), -50%);
-    }
-    &::after {
-      transform: translate(calc(-50% + rem(27)), calc(-50% - rem(55)));
     }
   }
   // .header__menu
