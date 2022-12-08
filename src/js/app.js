@@ -39,7 +39,7 @@ flsFunctions.menuInit();
 Документация: https://template.fls.guru/template-docs/modul-spojlery.html
 Сниппет (HTML): spollers
 */
-// flsFunctions.spollers();
+flsFunctions.spollers();
 
 /*
 Модуль работы с табами
@@ -158,16 +158,6 @@ flsForms.formSubmit();
 // Сниппет(HTML):
 // import './libs/watcher.js'
 
-// Модуль поекранної прокрутки
-// Документация: https://template.fls.guru/template-docs/modul-poekrannoj-prokrutki-stranicy-fullpage.html
-// Сниппет(HTML):
-// import './libs/fullpage.js'
-
-// Модуль паралаксу
-// Документація: https://template.fls.guru/template-docs/paralaks-pri-skroli.html
-// Сниппет(HTML):
-// import './libs/parallax.js'
-
 // Функции работы скроллом
 import * as flsScroll from "./files/scroll/scroll.js";
 
@@ -182,10 +172,15 @@ flsScroll.headerScroll();
 // Функционал липкого блока
 // flsScroll.stickyBlock();
 
-// Модуль анімація цифрового лічильника
-// Документація: https://template.fls.guru/template-docs/modul-animacii-cifrovogo-lichilnika.html
-// Сніппет(HTML):
-// flsScroll.digitsCounter();
+// Модуль поекранної прокрутки
+// Документация: https://template.fls.guru/template-docs/modul-poekrannoj-prokrutki-stranicy-fullpage.html
+// Сниппет(HTML):
+// import './libs/fullpage.js'
+
+// Модуль паралаксу
+// Документация:
+// Сниппет(HTML):
+import "./libs/parallax.js";
 
 // ========================================================================================================================================================================================================================================================
 // Галерея ========================================================================================================================================================================================================================================================
