@@ -378,11 +378,15 @@
   // .why__steps
   &__steps {
     &:not(:last-child) {
-      @include adaptiveValue("margin-bottom", 48, 30);
+      @include adaptiveValue("margin-bottom", 55, 30);
     }
   }
   // .why__button
   &__button {
+		min-width: rem(222);
+		@media (max-width:$mobileSmall){
+			width: 100%;
+		}
   }
   // .why__image
   &__image {
@@ -399,7 +403,7 @@
     font-size: rem(20);
     line-height: math.div(55, 20);
     display: flex;
-    gap: rem(50);
+    @include adaptiveValue("gap", 48, 20);
     &::before {
       text-align: center;
       line-height: rem(70);
